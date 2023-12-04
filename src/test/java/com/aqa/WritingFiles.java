@@ -26,7 +26,5 @@ public class WritingFiles {
 
         //closing stream
         writer.close();
-
-
     }
 }
