@@ -15,8 +15,6 @@ public class ReadingFromProperties {
         FileInputStream fileInputStream = new FileInputStream(filePath);
         properties.load(fileInputStream);
         System.out.println(properties.getProperty("dob"));
-
-
     }
 }
 
