@@ -17,11 +17,12 @@ public class WritingFiles {
         BufferedWriter writer = new BufferedWriter(fileWriter);
 
         //writing inside the file
-        writer.write("First line");
-        writer.newLine();
-        writer.write("Second Line");
-        writer.newLine();
-        writer.write("Third Line");
+        writer.write("-------------TEXT--------------------" + "\n");
+
+        int rand = (int)(Math.random()*100 + 1);
+        for (int i = 0; i < rand; i++){
+            writer.write(i+1 + ". " + "new Line with Random text" + "\n");
+        }
 
         //closing stream
         writer.close();
