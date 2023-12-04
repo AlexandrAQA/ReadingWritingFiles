@@ -23,10 +23,7 @@ public class WritingFiles {
         for (int i = 0; i < rand; i++){
             writer.write(i+1 + ". " + "new Line with Random text" + "\n");
         }
-
         //closing stream
         writer.close();
-
-
     }
 }
