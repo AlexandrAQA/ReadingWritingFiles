@@ -14,11 +14,12 @@ public class ReadingFiles {
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             //read text file
-            bufferedReader.readLine();
-            System.out.println(bufferedReader.readLine());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+            while (bufferedReader.readLine() != null){
+                System.out.println(bufferedReader.readLine());
+            }
+            //closing
+            bufferedReader.close();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
